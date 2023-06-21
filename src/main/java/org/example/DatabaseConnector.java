@@ -11,7 +11,7 @@ public class DatabaseConnector {
     public Connection connect() {
         Connection connection = null;
         try {
-            String url = "jdbc:mysql://localhost:3306/bookstore";
+            String url = "jdbc:mysql://localhost:3306/bookstore"; //Remember to add bookstore database or whatever database name at end of url
             String username = "root";
             String password = "root";
             connection = DriverManager.getConnection(url, username, password);
